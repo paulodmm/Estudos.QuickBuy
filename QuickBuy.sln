@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26124.0
+MinimumVisualStudioVersion = 15.0.26124.0
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuickBuy.Dominio", "QuickBuy.Dominio\QuickBuy.Dominio.csproj", "{97EACEE9-218E-40FE-9101-18170BA2A9E7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuickBuy.Repositorio", "QuickBuy.Repositorio\QuickBuy.Repositorio.csproj", "{412CE501-85A1-4A92-8585-E0AA5FE1A340}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickBuy.Web", "QuickBuy.Web\QuickBuy.Web.csproj", "{78C64EFF-508F-4886-8B1C-DD6528D2D4DB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{97EACEE9-218E-40FE-9101-18170BA2A9E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97EACEE9-218E-40FE-9101-18170BA2A9E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97EACEE9-218E-40FE-9101-18170BA2A9E7}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{97EACEE9-218E-40FE-9101-18170BA2A9E7}.Debug|x64.Build.0 = Debug|Any CPU
+		{97EACEE9-218E-40FE-9101-18170BA2A9E7}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{97EACEE9-218E-40FE-9101-18170BA2A9E7}.Debug|x86.Build.0 = Debug|Any CPU
+		{97EACEE9-218E-40FE-9101-18170BA2A9E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97EACEE9-218E-40FE-9101-18170BA2A9E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97EACEE9-218E-40FE-9101-18170BA2A9E7}.Release|x64.ActiveCfg = Release|Any CPU
+		{97EACEE9-218E-40FE-9101-18170BA2A9E7}.Release|x64.Build.0 = Release|Any CPU
+		{97EACEE9-218E-40FE-9101-18170BA2A9E7}.Release|x86.ActiveCfg = Release|Any CPU
+		{97EACEE9-218E-40FE-9101-18170BA2A9E7}.Release|x86.Build.0 = Release|Any CPU
+		{412CE501-85A1-4A92-8585-E0AA5FE1A340}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{412CE501-85A1-4A92-8585-E0AA5FE1A340}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{412CE501-85A1-4A92-8585-E0AA5FE1A340}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{412CE501-85A1-4A92-8585-E0AA5FE1A340}.Debug|x64.Build.0 = Debug|Any CPU
+		{412CE501-85A1-4A92-8585-E0AA5FE1A340}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{412CE501-85A1-4A92-8585-E0AA5FE1A340}.Debug|x86.Build.0 = Debug|Any CPU
+		{412CE501-85A1-4A92-8585-E0AA5FE1A340}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{412CE501-85A1-4A92-8585-E0AA5FE1A340}.Release|Any CPU.Build.0 = Release|Any CPU
+		{412CE501-85A1-4A92-8585-E0AA5FE1A340}.Release|x64.ActiveCfg = Release|Any CPU
+		{412CE501-85A1-4A92-8585-E0AA5FE1A340}.Release|x64.Build.0 = Release|Any CPU
+		{412CE501-85A1-4A92-8585-E0AA5FE1A340}.Release|x86.ActiveCfg = Release|Any CPU
+		{412CE501-85A1-4A92-8585-E0AA5FE1A340}.Release|x86.Build.0 = Release|Any CPU
+		{78C64EFF-508F-4886-8B1C-DD6528D2D4DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78C64EFF-508F-4886-8B1C-DD6528D2D4DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78C64EFF-508F-4886-8B1C-DD6528D2D4DB}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{78C64EFF-508F-4886-8B1C-DD6528D2D4DB}.Debug|x64.Build.0 = Debug|Any CPU
+		{78C64EFF-508F-4886-8B1C-DD6528D2D4DB}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{78C64EFF-508F-4886-8B1C-DD6528D2D4DB}.Debug|x86.Build.0 = Debug|Any CPU
+		{78C64EFF-508F-4886-8B1C-DD6528D2D4DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78C64EFF-508F-4886-8B1C-DD6528D2D4DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78C64EFF-508F-4886-8B1C-DD6528D2D4DB}.Release|x64.ActiveCfg = Release|Any CPU
+		{78C64EFF-508F-4886-8B1C-DD6528D2D4DB}.Release|x64.Build.0 = Release|Any CPU
+		{78C64EFF-508F-4886-8B1C-DD6528D2D4DB}.Release|x86.ActiveCfg = Release|Any CPU
+		{78C64EFF-508F-4886-8B1C-DD6528D2D4DB}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {68EF010F-3EC0-4F4E-9788-0C81CD08FD29}
+	EndGlobalSection
+EndGlobal
