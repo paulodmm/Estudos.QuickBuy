@@ -1,0 +1,5 @@
+{
+  "ConnectionStrings": {
+    "QuickBuyDB": "Server=LOCALHOST\\SQLEXPRESS;Database=QuickBuy;ersist security info=True;user id=sa;password=mudar123;"
+  }
+}
