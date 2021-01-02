@@ -1,45 +1,52 @@
 ﻿using Estudos.QuickBuy.Dominio.Contratos;
+using QuickBuy.Repositorio.Contexto;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace Estudos.QuickBuy.Repositorio.Repositorios
 {
     public class BaseRepositorio<TEntity> : IBaseRespositorio<TEntity> where TEntity : class
     {
-        public BaseRepositorio()
-        {
+        protected QuickBuyContexto QuickBuyContexto;
 
+        public BaseRepositorio(QuickBuyContexto quickBuyContexto)
+        {
+            this.QuickBuyContexto = quickBuyContexto;
         }
 
         public void Adicionar(TEntity entity)
         {
-            throw new NotImplementedException();
+            QuickBuyContexto.Set<TEntity>().Add(entity);
+            QuickBuyContexto.SaveChanges();
         }
 
         public void Atualizar(TEntity entity)
         {
-            throw new NotImplementedException();
-        }
-
-        public void Dispose()
-        {
-            throw new NotImplementedException();
+            QuickBuyContexto.Set<TEntity>().Update(entity);
+            QuickBuyContexto.SaveChanges();
         }
 
         public TEntity ObterPorId(int id)
         {
-            throw new NotImplementedException();
+            return QuickBuyContexto.Set<TEntity>().Find(id);
         }
 
         public IEnumerable<TEntity> ObterTodos()
         {
-            throw new NotImplementedException();
+            return QuickBuyContexto.Set<TEntity>().ToList();
         }
 
         public void Remover(TEntity entity)
         {
-            throw new NotImplementedException();
+            QuickBuyContexto.Set<TEntity>().Remove(entity);
+            QuickBuyContexto.SaveChanges();
+        }
+
+        public void Dispose()
+        {
+            QuickBuyContexto.Dispose();
         }
     }
 }
