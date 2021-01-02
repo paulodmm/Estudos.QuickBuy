@@ -6,11 +6,19 @@
            name="email" placeholder="Informe o seu e-mail"
            class="form-control mb-2"
            [(ngModel)]="usuario.email"
+           [ngClass]="{
+            'is-invalid':email.invalid && (email.dirty || email. touched),
+            'is-valid':email.valid && (email.dirty || email. touched)
+           }"
            #email="ngModel"
-           required />
-    <div class="alert alert-danger" *ngIf="email.invalid && (email.dirty || email. touched)">
+           required
+           email/>
+    <div class="invalid-feedback" *ngIf="email.invalid && (email.dirty || email. touched)">
       <div *ngIf="email.errors.required">
         O e-mail é obrigatório
+      </div>
+      <div *ngIf="email.errors.email">
+        O e-mail está incorreto
       </div>
     </div>
 
@@ -18,6 +26,7 @@
     <input type="password" id="inputSenha"
            name="senha" placeholder="Digite a senha"
            class="form-control mb-3"
+           required
            [(ngModel)]="usuario.senha" />
 
     <button class="btn btn-primary btn-block mb-2" type="submit" (click)="entrar()">Entrar</button>
@@ -40,5 +49,6 @@
     //{{variavel}} e [title]="variavel" são duas formas de imprimir variaveis
     //*ngIf confirma o bool usuarioAutenticado para exibir
     //*ngFor="let us of usuarios é um foreach usar let [nomevariavel] of [nomeLista]
+    //email.dirty (está limpo) || email. touched (está em foco)
   </script>
 </div>
